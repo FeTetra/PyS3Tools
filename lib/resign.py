@@ -10,6 +10,8 @@ class decryptEboot:
     
     workingDir = "./"
     pwshFix = ""
+    
+    # Get EBOOT.bin from tkinter file dialog
     input_file_eboot = str(" \'" + filedialog.askopenfilename(initialdir = workingDir, title = "Select EBOOT.BIN", filetypes = (("BIN Files", "*.bin"), ("All Files", "*.*"))) + "\'")
     
     if (os.name == "nt"):
